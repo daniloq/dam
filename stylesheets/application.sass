@@ -1,4 +1,115 @@
+*
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  outline: none
+  box-sizing: border-box
+
 body
   padding: 0
   margin: 0
-  background: white
+  background: #0E0E10
+  color: #ffffff
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 150%
+
+a
+  color: #9146FF
+  &:hover, &:visited
+    color: rgb(119, 44, 232)
+
+.topnav
+  background: #18181B
+  height: 50px
+  width: 100%
+  display: flex
+  padding: 0 20px
+  align-items: center
+  justify-content: space-between
+
+  h1
+    font-size: 18px
+    line-height: 120%
+    margin-left: 10px
+
+  .avatar
+    margin-left: 10px
+
+  &__left, &__right
+    display: flex
+    align-items: center
+
+.avatar
+  width: 30px
+  height: 30px
+
+  img
+    width: 100%
+    height: auto
+    border-radius: 50%
+
+.button
+  padding: 10px
+  height: 30px
+  background: #9146FF
+  border: none
+  border-radius: 4px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #ffffff
+  white-space: nowrap
+
+  &:hover
+    background: rgb(119, 44, 232)
+    cursor: pointer
+
+  &__icon
+    background: transparent
+
+  &__small
+    font-size: 11px
+    height: 18px
+    border-radius: 2px
+
+.container
+  max-width: 1040px
+  margin: 0 auto
+  padding: 20px 0
+
+.banner
+  background: #1F1F23
+  border-radius: 6px
+  padding: 20px
+  display: flex
+  justify-content: space-between
+  font-size: 12px
+
+  h4
+    margin: 0
+    padding: 0
+    font-size: 14px
+
+  p
+    padding-bottom: 0
+    margin-bottom: 0
+
+.panel
+  background: #1F1F23
+  border-radius: 6px
+  margin-top: 20px
+
+  &__header
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    padding: 20px
+
+    h2
+      font-size: 18px
+      color: #efeff1
+      margin: 0
+      padding: 0
+
+  &__content
+    padding: 20px
+    font-size: 12px
