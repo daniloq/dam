@@ -19,6 +19,9 @@ a {
   a:hover, a:visited {
     color: #772ce8; }
 
+.flex {
+  display: flex; }
+
 .topnav {
   background: #18181B;
   height: 50px;
@@ -65,6 +68,8 @@ a {
     font-size: 11px;
     height: 18px;
     border-radius: 2px; }
+  .button__secondary {
+    background: rgba(255, 255, 255, 0.15); }
 
 .container {
   max-width: 1040px;
@@ -101,5 +106,58 @@ a {
   .panel__content {
     padding: 20px;
     font-size: 12px; }
+
+.emote__container {
+  display: inline-flex;
+  align-items: center;
+  background: #26262C;
+  border-radius: 2px;
+  padding: 5px 10px; }
+
+.tier {
+  display: flex;
+  margin-bottom: 30px; }
+  .tier__title {
+    width: 120px; }
+  .tier p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #efeff1; }
+
+small {
+  font-size: 12px;
+  color: #ADADB8; }
+
+.modifier {
+  margin: 20px 0;
+  display: inline-flex;
+  align-items: center; }
+  .modifier__button {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    height: 24px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10px; }
+    .modifier__button:hover {
+      cursor: pointer; }
+
+.drag__container {
+  width: 100%; }
+
+.progress {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 4px;
+  border-radius: 1000px;
+  margin: 10px 0; }
+  .progress__bar {
+    background: #9146FF;
+    width: 50%;
+    height: 4px;
+    border-radius: 1000px; }
 
 /*# sourceMappingURL=application.css.map */
