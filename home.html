@@ -646,10 +646,12 @@
     dragula([document.getElementById('tiers')])
     .on('drag', function (el) {
       $(".overlay").addClass('overlay--visibile');
-      $('.emote__input--hover').hide();
-      $('.emote__delete').hide();
+      // $('.emote__input--hover').toggleClass('hide');
+      // $('.emote__delete').toggleClass('hide');
     }).on('drop', function (el) {
       $(".overlay").removeClass('overlay--visibile');
+      // $('.emote__input--hover').toggleClass('hide');
+      // $('.emote__delete').toggleClass('hide');
     });
     // Show and Hide Popover
     function myFunction() {

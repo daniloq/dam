@@ -158,6 +158,8 @@ a {
   position: absolute;
   right: 10px;
   display: none; }
+  .emote__delete:hover {
+    cursor: pointer; }
 
 .tier {
   display: flex;
@@ -266,6 +268,12 @@ small {
   height: 826px;
   bottom: 0; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 .gu-mirror {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
@@ -273,6 +281,8 @@ small {
   -webkit-box-shadow: 0px 1px 26px 1px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: 0px 1px 26px 1px rgba(0, 0, 0, 0.48);
   box-shadow: 0px 1px 26px 1px rgba(0, 0, 0, 0.48); }
+  .gu-mirror .emote__input--hover, .gu-mirror .emote__delete {
+    display: none !important; }
 
 .gu-transit {
   opacity: 1;
