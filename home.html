@@ -87,61 +87,73 @@
               <div id="tiers" class="drag__area">
                 <div class="emote__container">
                   <div class="emote__input">1</div>
+                  <input class="emote__input--active" value="1" />
                   <img src="images/peek.png" />
                   <p>Peek</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">2</div>
+                  <input class="emote__input--active" value="2" />
                   <img src="images/scream.png" />
                   <p>Scream</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">3</div>
+                  <input class="emote__input--active" value="3" />
                   <img src="images/happy.png" />
                   <p>Happy</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">4</div>
+                  <input class="emote__input--active" value="4" />
                   <img src="images/think.png" />
                   <p>Think</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">5</div>
+                  <input class="emote__input--active" value="5" />
                   <img src="images/gun.png" />
                   <p>Peek</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">6</div>
+                  <input class="emote__input--active" value="6" />
                   <img src="images/yes.png" />
                   <p>Yes</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">7</div>
+                  <input class="emote__input--active" value="7" />
                   <img src="images/no.png" />
                   <p>No</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">8</div>
+                  <input class="emote__input--active" value="8" />
                   <img src="images/suffer.png" />
                   <p>Suffer</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">9</div>
+                  <input class="emote__input--active" value="9" />
                   <img src="images/aww.png" />
                   <p>Aww</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">10</div>
+                  <input class="emote__input--active" value="10" />
                   <img src="images/ree.png" />
                   <p>Ree</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">11</div>
+                  <input class="emote__input--active" value="11" />
                   <img src="images/cookie.png" />
                   <p>Cookie</p>
                 </div>
                 <div class="emote__container">
                   <div class="emote__input">12</div>
+                  <input class="emote__input--active" value="12" />
                   <img src="images/dab.png" />
                   <p>Dab</p>
                 </div>
@@ -431,5 +443,12 @@
         x.style.display = "none";
       }x
     }
+    // Show and Hide Emote Inputs
+    $('.emote__input').click(function(){
+      $(this).closest('.emote__container').find('.emote__input--active').addClass('emote__input--visible');
+    });
+    $('.emote__container').click(function(){
+      $(this).find('.emote__input--active').toggleClass('emote__input--visible');
+    });
   </script>
 </html>
