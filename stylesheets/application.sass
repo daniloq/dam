@@ -142,9 +142,29 @@ a
 
     &:hover
       cursor: move
+      -webkit-box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+      -moz-box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+      box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+
+      .emote__delete
+        display: flex
+
+      .emote__input--hover
+        position: absolute
+        left: 10px
+        border: 2px solid transparent
+        width: 30px
+        background: #47474C
+        color: #ffffff
+        border-radius: 2px
+        display: block
+        z-index: 2
 
   &__input
     margin-right: 30px
+
+    &--hover
+      display: none
 
     &--active
       position: absolute
@@ -158,6 +178,11 @@ a
 
     &--visible
       display: block
+
+  &__delete
+    position: absolute
+    right: 10px
+    display: none
 
 .tier
   display: flex
@@ -196,6 +221,9 @@ small
 
     &--dotted
       border: 2px dashed rgba(255, 255, 255, 0.25)
+
+  &__delete
+    display: none
 
 .drag
 
