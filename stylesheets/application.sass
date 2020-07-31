@@ -264,6 +264,11 @@ small
   height: 44px
   width: 100%
 
+  &:hover
+    background: #464649
+    border: 1px solid #464649
+    cursor: pointer
+
   &__container
     display: inline-flex
     width: calc(92% / 5)
@@ -342,3 +347,21 @@ small
 
   img, .emote__input, p
     display: none
+
+.modal
+  img
+    -webkit-box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+    -moz-box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+    box-shadow: 0px 1px 26px 1px rgba(0,0,0,0.48)
+    margin-top: 100px
+
+  &__background
+    background: rgba(0,0,0,.7)
+    position: absolute
+    display: flex
+    justify-content: center
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 4

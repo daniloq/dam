@@ -8,6 +8,12 @@
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
   </head>
   <body>
+    <!-- Upload Modal -->
+    <div class="modal__background" style="display:none">
+      <div class="modal">
+        <img src="images/emote-upload.png"/>
+      </div>
+    </div>
     <!-- Overlays For Emote On Hover -->
     <div class="overlay overlay__top"></div>
     <div class="overlay overlay__bottom"></div>
@@ -253,7 +259,7 @@
                     </svg>
                   </div>
                 </div>
-                <div class="add-button__container">
+                <div class="add-button__container modal__show">
                   <div class="add-button">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.16667 5.83333V10H5.83333V5.83333H10V4.16667H5.83333V0H4.16667V4.16667H0V5.83333H4.16667Z" fill="#EFEFF1"/>
@@ -646,12 +652,8 @@
     dragula([document.getElementById('tiers')])
     .on('drag', function (el) {
       $(".overlay").addClass('overlay--visibile');
-      // $('.emote__input--hover').toggleClass('hide');
-      // $('.emote__delete').toggleClass('hide');
     }).on('drop', function (el) {
       $(".overlay").removeClass('overlay--visibile');
-      // $('.emote__input--hover').toggleClass('hide');
-      // $('.emote__delete').toggleClass('hide');
     });
     // Show and Hide Popover
     function myFunction() {
@@ -671,6 +673,13 @@
     });
     $('.emote__container').click(function(){
       $(this).find('.emote__input--active').toggleClass('emote__input--visible');
+    });
+    // Show and Hide Upload Modal
+    $('.modal__show').click(function(){
+      $('.modal__background').show();
+    });
+    $('.modal__background').click(function(){
+      $(this).hide();
     });
   </script>
 </html>
