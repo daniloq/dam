@@ -8,6 +8,9 @@
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
   </head>
   <body>
+    <!-- Overlays For Emote On Hover -->
+    <div class="overlay overlay__top"></div>
+    <div class="overlay overlay__bottom"></div>
     <!-- Top Nav -->
     <div class="topnav">
       <div class="topnav__left">
@@ -413,7 +416,12 @@
   </body>
   <script>
     // Drag and Drop
-    dragula([document.getElementById('tiers')]);
+    dragula([document.getElementById('tiers')])
+    .on('drag', function (el) {
+      $(".overlay").addClass('overlay--visibile');
+    }).on('drop', function (el) {
+      $(".overlay").removeClass('overlay--visibile');
+    });
     // Show and Hide Popover
     function myFunction() {
       var x = document.getElementById("popover");

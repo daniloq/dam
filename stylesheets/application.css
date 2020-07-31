@@ -2,7 +2,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   outline: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all 0.3s; }
 
 body {
   padding: 0;
@@ -12,7 +13,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%; }
+  line-height: 150%;
+  position: relative; }
 
 a {
   color: #9146FF; }
@@ -119,6 +121,8 @@ a {
     margin-right: 10px;
     width: 28px;
     height: 28px; }
+  .emote__container:hover {
+    cursor: move; }
 .emote__input {
   margin-right: 20px; }
 
@@ -211,5 +215,20 @@ small {
       margin: 0 10px 0 0; }
   .popover__container {
     position: relative; }
+
+.overlay__top, .overlay__bottom {
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 3;
+  display: none; }
+.overlay--visibile {
+  display: block; }
+.overlay__top {
+  height: 326px; }
+.overlay__bottom {
+  height: 826px;
+  bottom: 0; }
 
 /*# sourceMappingURL=application.css.map */
