@@ -152,6 +152,8 @@ small {
     margin: 0 0 0 10px; }
     .modifier__button:hover {
       cursor: pointer; }
+    .modifier__button--dotted {
+      border: 2px dashed rgba(255, 255, 255, 0.25); }
 
 .drag__container {
   width: 100%; }
@@ -186,5 +188,21 @@ small {
       text-align: center;
       color: #ADADB8;
       font-size: 11px; }
+
+.popover {
+  position: absolute;
+  background: #18181B;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 2;
+  left: -75px; }
+  .popover .modifier__button {
+    margin: 0; }
+    .popover .modifier__button:not(:last-of-type) {
+      margin: 0 10px 0 0; }
+  .popover__container {
+    position: relative; }
 
 /*# sourceMappingURL=application.css.map */

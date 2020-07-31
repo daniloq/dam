@@ -175,6 +175,9 @@ small
     &:hover
       cursor: pointer
 
+    &--dotted
+      border: 2px dashed rgba(255, 255, 255, 0.25)
+
 .drag
 
   &__container
@@ -213,3 +216,22 @@ small
       text-align: center
       color: #ADADB8
       font-size: 11px
+
+.popover
+  position: absolute
+  background: #18181B
+  display: flex
+  justify-content: space-between
+  padding: 10px
+  border-radius: 6px
+  z-index: 2
+  left: -75px
+
+  .modifier__button
+    margin: 0
+
+    &:not(:last-of-type)
+      margin: 0 10px 0 0
+
+  &__container
+    position: relative
