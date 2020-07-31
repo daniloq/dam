@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>DAM - Twitch</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" rel="stylesheet">
     <link href="stylesheets/application.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
   </head>
   <body>
     <!-- Top Nav -->
@@ -78,23 +81,66 @@
                 Standard Emotes
                 <small>(12/16)</small>
               </p>
-              <div class="drag__area">
+              <div id="tiers" class="drag__area">
                 <div class="emote__container">
-                  <p>
-                    1
-                  </p>
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="28" height="28" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.0357143)"/>
-                    </pattern>
-                    <image id="image0" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAE4klEQVR4nLSWbWxTVRjH/73tXbeOWTdWGDA2Xsq6MTY6BlvERbYKG2UoJvqFsRhH9gEFUcHFt0D0g2iykKgBo5MQBXUmisEh6hQImQ4ZYTMbFDdHXBnYFul2tw5K27V9zLnQS9/WlSX+k5N77nPPOb/znPuc5xwOsVWy4bG11HaqhUaHBsUyYr9CpSXL6V9Lv2RjxdTdTp8e+IAKluQRgLGJBpwMWLvOuBoajUYyyGQyfHGoCUqlMqRhZuZcFBcX4d23dyE7K1M2JWBGxoxHs7MykZqaGmLXaNKjtp87Nwtq9QNISkpiwKhQRRQba5gBwDZ/XlYu8ygpSRVrXqL+HjDj/Pk/QOSH1zsuu+uML7xdNA+3LCsqtHAc9zHP8xzP8zFBfr8fO15+A6urnoDthgPdFy/DarvBxfG77kihUPzQ8u1hati5lYqKCqjt1LGQ4Agv7+19hwUJbd68mQKqqKhwA0iINn7ELDTp07N5XgFDeRmmqVSiB7F07PhP4rO9vR1ut1usy+Vy2UQeRhgVCrkUfps2PgXPuCcmcGzspvjs6+tDXV0dXC4Xi+QJgyYCOHbzlnCnPZCdnYnEsPAP1+I8nVRvbm5GaWkpBgcH4/dwdNTxlyCMSO/j4+MxgXXPbALHyZCXl4fq6mr09PQwb+P28CEi0p/t6JQMHo8HdvsQLl3qhdfrjRhAv7QA27dtQXl5OVpaWpCRwXYU4gLmA/iFrdKv7R2S8ZODn2PlI2vRdLAZ6zfU4PvjrRGDvLn7VaQk8zAajXA4HDGBwfqMhTcrMpmMPtrfSA07tor1+vp6MdxdLhfV1GykLw8fCNkaHWdOUu/Fc9Tf20XHjn5FJSXFbBz1ZEBLAMiKoaKMVizXi/Xc3Fzy+/0StKzsYTJf7hFhH+7bSxzH0c6XtkkTMK5dw/o9OBnwaDBQoZBTevp06b2pqUna2I2NjfTiC8+SY/gqzZihoUXahWTq/l0CVq+rigv4ZDAwvCQkJNCePXuos7OTDAaDCGLAqwMmEm6YQ5b48fVG1id1MiALoDPRYGq1mnQ6XYgtUamMmurYeVlVaWBt0iaCBMRyWA2AK8ENWBKora2FyWSCXq+X7JWVhqiz7u7pgdk8yKqvASgL/y4Pe2c7/hAAFttDAC7yPJ/odt1Ka2v7Df39/WLYV60xYN/7jVCpkkI6f3PkO+xo2IWs7HnIz89f6fP56gRB6GPjSA5Mts5sbxcvK+x4fmt9gt0+jNKSFSgsLIho1PrzKbzy+ltiagukRiJCa2vrdUEQFgWuHeEeRpPNar3uUCYqjZWrV8HjccPpdLJDFrdvuyAIwxgYGMBz2xuQk6ODSnXvsGZgr9c7zWazsRmcjBfI1GEy9Xqv/WNdpdNpOeaAIAgYHh7CyMgojv94An/2XkZaWhqSk5NDOrJ0aDab2Z1kP+Jc0mCtUCjku/VLl1RpF87n2VnZca7LfmXw2lmtVrue5dE5c+aA4+7FotVqxenTp7vZr5kKMCCWthbcrZvYHWjmzJlmrVYrS0lJCbl0dXV1sdPjaQCHcR9LGi52tNvuFnZRGnU6nQvUavVS9t/YCePz+WCxWHDhwoWviWjXFDkxlcxxXPOsWbMoJyeHZs+ezXLsEQAp/wcsWIsBnGC5IdrH+K5y96dLAMwABqJ9/C8AAP//KLpvZaSuM2MAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <p>
-                    Peek
-                  </p>
+                  <div class="emote__input">1</div>
+                  <img src="images/peek.png" />
+                  <p>Peek</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">2</div>
+                  <img src="images/scream.png" />
+                  <p>Scream</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">3</div>
+                  <img src="images/happy.png" />
+                  <p>Happy</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">4</div>
+                  <img src="images/think.png" />
+                  <p>Thinl</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">5</div>
+                  <img src="images/gun.png" />
+                  <p>Peek</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">6</div>
+                  <img src="images/yes.png" />
+                  <p>Yes</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">7</div>
+                  <img src="images/no.png" />
+                  <p>No</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">8</div>
+                  <img src="images/suffer.png" />
+                  <p>Suffer</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">9</div>
+                  <img src="images/aww.png" />
+                  <p>Aww</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">10</div>
+                  <img src="images/ree.png" />
+                  <p>Ree</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">11</div>
+                  <img src="images/cookie.png" />
+                  <p>Cookie</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">12</div>
+                  <img src="images/dab.png" />
+                  <p>Dab</p>
                 </div>
               </div>
             </div>
@@ -109,25 +155,57 @@
                 Standard Emotes
                 <small>(10/10)</small>
               </p>
-              <div class="drag__area">
-                <div class="emote__container">
-                  <p>
-                    1
-                  </p>
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="28" height="28" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.0357143)"/>
-                    </pattern>
-                    <image id="image0" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAE4klEQVR4nLSWbWxTVRjH/73tXbeOWTdWGDA2Xsq6MTY6BlvERbYKG2UoJvqFsRhH9gEFUcHFt0D0g2iykKgBo5MQBXUmisEh6hQImQ4ZYTMbFDdHXBnYFul2tw5K27V9zLnQS9/WlSX+k5N77nPPOb/znPuc5xwOsVWy4bG11HaqhUaHBsUyYr9CpSXL6V9Lv2RjxdTdTp8e+IAKluQRgLGJBpwMWLvOuBoajUYyyGQyfHGoCUqlMqRhZuZcFBcX4d23dyE7K1M2JWBGxoxHs7MykZqaGmLXaNKjtp87Nwtq9QNISkpiwKhQRRQba5gBwDZ/XlYu8ygpSRVrXqL+HjDj/Pk/QOSH1zsuu+uML7xdNA+3LCsqtHAc9zHP8xzP8zFBfr8fO15+A6urnoDthgPdFy/DarvBxfG77kihUPzQ8u1hati5lYqKCqjt1LGQ4Agv7+19hwUJbd68mQKqqKhwA0iINn7ELDTp07N5XgFDeRmmqVSiB7F07PhP4rO9vR1ut1usy+Vy2UQeRhgVCrkUfps2PgXPuCcmcGzspvjs6+tDXV0dXC4Xi+QJgyYCOHbzlnCnPZCdnYnEsPAP1+I8nVRvbm5GaWkpBgcH4/dwdNTxlyCMSO/j4+MxgXXPbALHyZCXl4fq6mr09PQwb+P28CEi0p/t6JQMHo8HdvsQLl3qhdfrjRhAv7QA27dtQXl5OVpaWpCRwXYU4gLmA/iFrdKv7R2S8ZODn2PlI2vRdLAZ6zfU4PvjrRGDvLn7VaQk8zAajXA4HDGBwfqMhTcrMpmMPtrfSA07tor1+vp6MdxdLhfV1GykLw8fCNkaHWdOUu/Fc9Tf20XHjn5FJSXFbBz1ZEBLAMiKoaKMVizXi/Xc3Fzy+/0StKzsYTJf7hFhH+7bSxzH0c6XtkkTMK5dw/o9OBnwaDBQoZBTevp06b2pqUna2I2NjfTiC8+SY/gqzZihoUXahWTq/l0CVq+rigv4ZDAwvCQkJNCePXuos7OTDAaDCGLAqwMmEm6YQ5b48fVG1id1MiALoDPRYGq1mnQ6XYgtUamMmurYeVlVaWBt0iaCBMRyWA2AK8ENWBKora2FyWSCXq+X7JWVhqiz7u7pgdk8yKqvASgL/y4Pe2c7/hAAFttDAC7yPJ/odt1Ka2v7Df39/WLYV60xYN/7jVCpkkI6f3PkO+xo2IWs7HnIz89f6fP56gRB6GPjSA5Mts5sbxcvK+x4fmt9gt0+jNKSFSgsLIho1PrzKbzy+ltiagukRiJCa2vrdUEQFgWuHeEeRpPNar3uUCYqjZWrV8HjccPpdLJDFrdvuyAIwxgYGMBz2xuQk6ODSnXvsGZgr9c7zWazsRmcjBfI1GEy9Xqv/WNdpdNpOeaAIAgYHh7CyMgojv94An/2XkZaWhqSk5NDOrJ0aDab2Z1kP+Jc0mCtUCjku/VLl1RpF87n2VnZca7LfmXw2lmtVrue5dE5c+aA4+7FotVqxenTp7vZr5kKMCCWthbcrZvYHWjmzJlmrVYrS0lJCbl0dXV1sdPjaQCHcR9LGi52tNvuFnZRGnU6nQvUavVS9t/YCePz+WCxWHDhwoWviWjXFDkxlcxxXPOsWbMoJyeHZs+ezXLsEQAp/wcsWIsBnGC5IdrH+K5y96dLAMwABqJ9/C8AAP//KLpvZaSuM2MAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <p>
-                    Peek
-                  </p>
-                </div>
+              <div class="emote__container">
+                <div class="emote__input">1</div>
+                <img src="images/peek.png" />
+                <p>Peek</p>
               </div>
+              <div class="emote__container">
+                <div class="emote__input">2</div>
+                <img src="images/scream.png" />
+                <p>Scream</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">3</div>
+                <img src="images/happy.png" />
+                <p>Happy</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">4</div>
+                <img src="images/think.png" />
+                <p>Thinl</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">5</div>
+                <img src="images/gun.png" />
+                <p>Peek</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">6</div>
+                <img src="images/yes.png" />
+                <p>Yes</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">7</div>
+                <img src="images/no.png" />
+                <p>No</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">8</div>
+                <img src="images/suffer.png" />
+                <p>Suffer</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">9</div>
+                <img src="images/aww.png" />
+                <p>Aww</p>
+              </div>
+              <div class="emote__container">
+                <div class="emote__input">10</div>
+                <img src="images/ree.png" />
+                <p>Ree</p>
+              </div>
+              <br />
               <div class="modifier">
                 <p>
                   Emote Modifiers
@@ -153,21 +231,9 @@
                 <small>(1/2)</small>
               </p>
               <div class="emote__container">
-                <p>
-                  1
-                </p>
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <rect width="28" height="28" fill="url(#pattern0)"/>
-                  <defs>
-                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0" transform="scale(0.0357143)"/>
-                  </pattern>
-                  <image id="image0" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAE4klEQVR4nLSWbWxTVRjH/73tXbeOWTdWGDA2Xsq6MTY6BlvERbYKG2UoJvqFsRhH9gEFUcHFt0D0g2iykKgBo5MQBXUmisEh6hQImQ4ZYTMbFDdHXBnYFul2tw5K27V9zLnQS9/WlSX+k5N77nPPOb/znPuc5xwOsVWy4bG11HaqhUaHBsUyYr9CpSXL6V9Lv2RjxdTdTp8e+IAKluQRgLGJBpwMWLvOuBoajUYyyGQyfHGoCUqlMqRhZuZcFBcX4d23dyE7K1M2JWBGxoxHs7MykZqaGmLXaNKjtp87Nwtq9QNISkpiwKhQRRQba5gBwDZ/XlYu8ygpSRVrXqL+HjDj/Pk/QOSH1zsuu+uML7xdNA+3LCsqtHAc9zHP8xzP8zFBfr8fO15+A6urnoDthgPdFy/DarvBxfG77kihUPzQ8u1hati5lYqKCqjt1LGQ4Agv7+19hwUJbd68mQKqqKhwA0iINn7ELDTp07N5XgFDeRmmqVSiB7F07PhP4rO9vR1ut1usy+Vy2UQeRhgVCrkUfps2PgXPuCcmcGzspvjs6+tDXV0dXC4Xi+QJgyYCOHbzlnCnPZCdnYnEsPAP1+I8nVRvbm5GaWkpBgcH4/dwdNTxlyCMSO/j4+MxgXXPbALHyZCXl4fq6mr09PQwb+P28CEi0p/t6JQMHo8HdvsQLl3qhdfrjRhAv7QA27dtQXl5OVpaWpCRwXYU4gLmA/iFrdKv7R2S8ZODn2PlI2vRdLAZ6zfU4PvjrRGDvLn7VaQk8zAajXA4HDGBwfqMhTcrMpmMPtrfSA07tor1+vp6MdxdLhfV1GykLw8fCNkaHWdOUu/Fc9Tf20XHjn5FJSXFbBz1ZEBLAMiKoaKMVizXi/Xc3Fzy+/0StKzsYTJf7hFhH+7bSxzH0c6XtkkTMK5dw/o9OBnwaDBQoZBTevp06b2pqUna2I2NjfTiC8+SY/gqzZihoUXahWTq/l0CVq+rigv4ZDAwvCQkJNCePXuos7OTDAaDCGLAqwMmEm6YQ5b48fVG1id1MiALoDPRYGq1mnQ6XYgtUamMmurYeVlVaWBt0iaCBMRyWA2AK8ENWBKora2FyWSCXq+X7JWVhqiz7u7pgdk8yKqvASgL/y4Pe2c7/hAAFttDAC7yPJ/odt1Ka2v7Df39/WLYV60xYN/7jVCpkkI6f3PkO+xo2IWs7HnIz89f6fP56gRB6GPjSA5Mts5sbxcvK+x4fmt9gt0+jNKSFSgsLIho1PrzKbzy+ltiagukRiJCa2vrdUEQFgWuHeEeRpPNar3uUCYqjZWrV8HjccPpdLJDFrdvuyAIwxgYGMBz2xuQk6ODSnXvsGZgr9c7zWazsRmcjBfI1GEy9Xqv/WNdpdNpOeaAIAgYHh7CyMgojv94An/2XkZaWhqSk5NDOrJ0aDab2Z1kP+Jc0mCtUCjku/VLl1RpF87n2VnZca7LfmXw2lmtVrue5dE5c+aA4+7FotVqxenTp7vZr5kKMCCWthbcrZvYHWjmzJlmrVYrS0lJCbl0dXV1sdPjaQCHcR9LGi52tNvuFnZRGnU6nQvUavVS9t/YCePz+WCxWHDhwoWviWjXFDkxlcxxXPOsWbMoJyeHZs+ezXLsEQAp/wcsWIsBnGC5IdrH+K5y96dLAMwABqJ9/C8AAP//KLpvZaSuM2MAAAAASUVORK5CYII="/>
-                  </defs>
-                </svg>
-                <p>
-                  Peek
-                </p>
+                <div class="emote__input">1</div>
+                <img src="images/dance.gif" />
+                <p>Dance</p>
               </div>
             </div>
           </div>
@@ -183,21 +249,14 @@
               </p>
               <div class="drag__area">
                 <div class="emote__container">
-                  <p>
-                    1
-                  </p>
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="28" height="28" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.0357143)"/>
-                    </pattern>
-                    <image id="image0" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAE4klEQVR4nLSWbWxTVRjH/73tXbeOWTdWGDA2Xsq6MTY6BlvERbYKG2UoJvqFsRhH9gEFUcHFt0D0g2iykKgBo5MQBXUmisEh6hQImQ4ZYTMbFDdHXBnYFul2tw5K27V9zLnQS9/WlSX+k5N77nPPOb/znPuc5xwOsVWy4bG11HaqhUaHBsUyYr9CpSXL6V9Lv2RjxdTdTp8e+IAKluQRgLGJBpwMWLvOuBoajUYyyGQyfHGoCUqlMqRhZuZcFBcX4d23dyE7K1M2JWBGxoxHs7MykZqaGmLXaNKjtp87Nwtq9QNISkpiwKhQRRQba5gBwDZ/XlYu8ygpSRVrXqL+HjDj/Pk/QOSH1zsuu+uML7xdNA+3LCsqtHAc9zHP8xzP8zFBfr8fO15+A6urnoDthgPdFy/DarvBxfG77kihUPzQ8u1hati5lYqKCqjt1LGQ4Agv7+19hwUJbd68mQKqqKhwA0iINn7ELDTp07N5XgFDeRmmqVSiB7F07PhP4rO9vR1ut1usy+Vy2UQeRhgVCrkUfps2PgXPuCcmcGzspvjs6+tDXV0dXC4Xi+QJgyYCOHbzlnCnPZCdnYnEsPAP1+I8nVRvbm5GaWkpBgcH4/dwdNTxlyCMSO/j4+MxgXXPbALHyZCXl4fq6mr09PQwb+P28CEi0p/t6JQMHo8HdvsQLl3qhdfrjRhAv7QA27dtQXl5OVpaWpCRwXYU4gLmA/iFrdKv7R2S8ZODn2PlI2vRdLAZ6zfU4PvjrRGDvLn7VaQk8zAajXA4HDGBwfqMhTcrMpmMPtrfSA07tor1+vp6MdxdLhfV1GykLw8fCNkaHWdOUu/Fc9Tf20XHjn5FJSXFbBz1ZEBLAMiKoaKMVizXi/Xc3Fzy+/0StKzsYTJf7hFhH+7bSxzH0c6XtkkTMK5dw/o9OBnwaDBQoZBTevp06b2pqUna2I2NjfTiC8+SY/gqzZihoUXahWTq/l0CVq+rigv4ZDAwvCQkJNCePXuos7OTDAaDCGLAqwMmEm6YQ5b48fVG1id1MiALoDPRYGq1mnQ6XYgtUamMmurYeVlVaWBt0iaCBMRyWA2AK8ENWBKora2FyWSCXq+X7JWVhqiz7u7pgdk8yKqvASgL/y4Pe2c7/hAAFttDAC7yPJ/odt1Ka2v7Df39/WLYV60xYN/7jVCpkkI6f3PkO+xo2IWs7HnIz89f6fP56gRB6GPjSA5Mts5sbxcvK+x4fmt9gt0+jNKSFSgsLIho1PrzKbzy+ltiagukRiJCa2vrdUEQFgWuHeEeRpPNar3uUCYqjZWrV8HjccPpdLJDFrdvuyAIwxgYGMBz2xuQk6ODSnXvsGZgr9c7zWazsRmcjBfI1GEy9Xqv/WNdpdNpOeaAIAgYHh7CyMgojv94An/2XkZaWhqSk5NDOrJ0aDab2Z1kP+Jc0mCtUCjku/VLl1RpF87n2VnZca7LfmXw2lmtVrue5dE5c+aA4+7FotVqxenTp7vZr5kKMCCWthbcrZvYHWjmzJlmrVYrS0lJCbl0dXV1sdPjaQCHcR9LGi52tNvuFnZRGnU6nQvUavVS9t/YCePz+WCxWHDhwoWviWjXFDkxlcxxXPOsWbMoJyeHZs+ezXLsEQAp/wcsWIsBnGC5IdrH+K5y96dLAMwABqJ9/C8AAP//KLpvZaSuM2MAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <p>
-                    Peek
-                  </p>
+                  <div class="emote__input">1</div>
+                  <img src="images/cookie.png" />
+                  <p>Cookie</p>
+                </div>
+                <div class="emote__container">
+                  <div class="emote__input">2</div>
+                  <img src="images/dab.png" />
+                  <p>Dab</p>
                 </div>
               </div>
               <div class="modifier">
@@ -225,21 +284,9 @@
                 <small>(1/2)</small>
               </p>
               <div class="emote__container">
-                <p>
-                  1
-                </p>
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <rect width="28" height="28" fill="url(#pattern0)"/>
-                  <defs>
-                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0" transform="scale(0.0357143)"/>
-                  </pattern>
-                  <image id="image0" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAE4klEQVR4nLSWbWxTVRjH/73tXbeOWTdWGDA2Xsq6MTY6BlvERbYKG2UoJvqFsRhH9gEFUcHFt0D0g2iykKgBo5MQBXUmisEh6hQImQ4ZYTMbFDdHXBnYFul2tw5K27V9zLnQS9/WlSX+k5N77nPPOb/znPuc5xwOsVWy4bG11HaqhUaHBsUyYr9CpSXL6V9Lv2RjxdTdTp8e+IAKluQRgLGJBpwMWLvOuBoajUYyyGQyfHGoCUqlMqRhZuZcFBcX4d23dyE7K1M2JWBGxoxHs7MykZqaGmLXaNKjtp87Nwtq9QNISkpiwKhQRRQba5gBwDZ/XlYu8ygpSRVrXqL+HjDj/Pk/QOSH1zsuu+uML7xdNA+3LCsqtHAc9zHP8xzP8zFBfr8fO15+A6urnoDthgPdFy/DarvBxfG77kihUPzQ8u1hati5lYqKCqjt1LGQ4Agv7+19hwUJbd68mQKqqKhwA0iINn7ELDTp07N5XgFDeRmmqVSiB7F07PhP4rO9vR1ut1usy+Vy2UQeRhgVCrkUfps2PgXPuCcmcGzspvjs6+tDXV0dXC4Xi+QJgyYCOHbzlnCnPZCdnYnEsPAP1+I8nVRvbm5GaWkpBgcH4/dwdNTxlyCMSO/j4+MxgXXPbALHyZCXl4fq6mr09PQwb+P28CEi0p/t6JQMHo8HdvsQLl3qhdfrjRhAv7QA27dtQXl5OVpaWpCRwXYU4gLmA/iFrdKv7R2S8ZODn2PlI2vRdLAZ6zfU4PvjrRGDvLn7VaQk8zAajXA4HDGBwfqMhTcrMpmMPtrfSA07tor1+vp6MdxdLhfV1GykLw8fCNkaHWdOUu/Fc9Tf20XHjn5FJSXFbBz1ZEBLAMiKoaKMVizXi/Xc3Fzy+/0StKzsYTJf7hFhH+7bSxzH0c6XtkkTMK5dw/o9OBnwaDBQoZBTevp06b2pqUna2I2NjfTiC8+SY/gqzZihoUXahWTq/l0CVq+rigv4ZDAwvCQkJNCePXuos7OTDAaDCGLAqwMmEm6YQ5b48fVG1id1MiALoDPRYGq1mnQ6XYgtUamMmurYeVlVaWBt0iaCBMRyWA2AK8ENWBKora2FyWSCXq+X7JWVhqiz7u7pgdk8yKqvASgL/y4Pe2c7/hAAFttDAC7yPJ/odt1Ka2v7Df39/WLYV60xYN/7jVCpkkI6f3PkO+xo2IWs7HnIz89f6fP56gRB6GPjSA5Mts5sbxcvK+x4fmt9gt0+jNKSFSgsLIho1PrzKbzy+ltiagukRiJCa2vrdUEQFgWuHeEeRpPNar3uUCYqjZWrV8HjccPpdLJDFrdvuyAIwxgYGMBz2xuQk6ODSnXvsGZgr9c7zWazsRmcjBfI1GEy9Xqv/WNdpdNpOeaAIAgYHh7CyMgojv94An/2XkZaWhqSk5NDOrJ0aDab2Z1kP+Jc0mCtUCjku/VLl1RpF87n2VnZca7LfmXw2lmtVrue5dE5c+aA4+7FotVqxenTp7vZr5kKMCCWthbcrZvYHWjmzJlmrVYrS0lJCbl0dXV1sdPjaQCHcR9LGi52tNvuFnZRGnU6nQvUavVS9t/YCePz+WCxWHDhwoWviWjXFDkxlcxxXPOsWbMoJyeHZs+ezXLsEQAp/wcsWIsBnGC5IdrH+K5y96dLAMwABqJ9/C8AAP//KLpvZaSuM2MAAAAASUVORK5CYII="/>
-                  </defs>
-                </svg>
-                <p>
-                  Peek
-                </p>
+                <div class="emote__input">1</div>
+                <img src="images/dance.gif" />
+                <p>Dance</p>
               </div>
             </div>
           </div>
@@ -288,4 +335,7 @@
       </div>
     </div>
   </body>
+  <script>
+    dragula([document.getElementById('tiers')]);
+  </script>
 </html>
