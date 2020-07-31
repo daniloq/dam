@@ -108,7 +108,7 @@ a {
     font-size: 12px; }
 
 .emote__container {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   background: #26262C;
   border-radius: 2px;
@@ -157,6 +157,13 @@ small {
 
 .drag__container {
   width: 100%; }
+  .drag__container .emote__container {
+    display: inline-flex; }
+.drag__area {
+  display: flex;
+  flex-wrap: wrap; }
+  .drag__area .add-button__container p {
+    bottom: -10px; }
 
 .progress {
   background: rgba(255, 255, 255, 0.2);

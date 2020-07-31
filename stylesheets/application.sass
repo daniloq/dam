@@ -124,7 +124,7 @@ a
 .emote
 
   &__container
-    display: inline-flex
+    display: flex
     align-items: center
     background: #26262C
     border-radius: 2px
@@ -182,6 +182,16 @@ small
 
   &__container
     width: 100%
+
+    .emote__container
+      display: inline-flex
+
+  &__area
+    display: flex
+    flex-wrap: wrap
+
+    .add-button__container p
+      bottom: -10px
 
 .progress
   background: rgba(255, 255, 255, 0.2)
