@@ -151,7 +151,8 @@ a {
     background: #000000;
     color: #ffffff;
     border-radius: 2px;
-    display: none; }
+    display: none;
+    z-index: 3; }
   .emote__input--visible {
     display: block; }
 .emote__delete {
