@@ -313,4 +313,18 @@ small {
   left: 0;
   z-index: 4; }
 
+.left-nav {
+  background: #19171C;
+  width: 221px;
+  height: 100vh;
+  margin-top: 1px;
+  position: relative; }
+  .left-nav:hover .nav-1--hover {
+    display: block; }
+
+.nav-1--hover {
+  position: absolute;
+  left: 0;
+  display: none; }
+
 /*# sourceMappingURL=application.css.map */
