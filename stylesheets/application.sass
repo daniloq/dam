@@ -373,11 +373,28 @@ small
   margin-top: 1px
   position: relative
 
-  &:hover
-    .nav-1--hover
-      display: block
-
 .nav-1--hover
+  display: none
   position: absolute
   left: 0
-  display: none
+  z-index: 2
+
+.button__placeholder
+  background: transparent
+  display: inline-block
+  width: 205px
+  border-radius: 4px
+  height: 40px
+  position: absolute
+  left: 10px
+  top: 270px
+  z-index: 3
+
+  &:hover
+    cursor: pointer
+
+  &--2
+    top: 357px
+
+.button__placeholder:hover + .nav-1--hover
+  display: block !important
