@@ -681,5 +681,9 @@
     $('.modal__background').click(function(){
       $(this).hide();
     });
+    // Hide Emote on Delete
+    $('.emote__delete').click(function(){
+      $(this).closest('.emote__container').hide();
+    });
   </script>
 </html>
