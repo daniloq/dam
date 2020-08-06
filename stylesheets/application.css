@@ -194,8 +194,9 @@ small {
       cursor: pointer; }
     .modifier__button--dotted {
       border: 2px dashed rgba(255, 255, 255, 0.25); }
-  .modifier__delete {
-    display: none; }
+
+.flip, .flip__button--grey {
+  display: none; }
 
 .drag__container {
   width: 100%; }
